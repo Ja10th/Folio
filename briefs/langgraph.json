@@ -1,0 +1,100 @@
+{
+  "failed": false,
+  "query": "Research LangGraph and tell me what it does.",
+  "topic": "LangGraph",
+  "intent": "define",
+  "kicker": "What it is",
+  "points_label": "What it does",
+  "queries": [
+    "what is LangGraph",
+    "LangGraph official documentation"
+  ],
+  "lead": {
+    "text": "LangGraph, created by LangChain, is an open source AI agent framework designed to build, deploy and manage complex generative AI agent workflows.",
+    "sources": [
+      3
+    ]
+  },
+  "points": [
+    {
+      "text": "LangGraph provides low-level supporting infrastructure for any long-running, stateful workflow or agent.",
+      "sources": [
+        1
+      ]
+    },
+    {
+      "text": "Many production systems use both: LangChain’s components (document loaders, vector stores, model interfaces) combined with LangGraph’s stateful orchestration layer.",
+      "sources": [
+        4
+      ]
+    },
+    {
+      "text": "Nodes: In LangGraph, nodes represent individual components or agents within an AI workflow.",
+      "sources": [
+        3
+      ]
+    },
+    {
+      "text": "Mix deterministic and agentic steps: Combine hand-coded, deterministic logic with LLM-driven decision-making in a single graph.",
+      "sources": [
+        1
+      ]
+    }
+  ],
+  "quote": null,
+  "sources": [
+    {
+      "id": 1,
+      "title": "LangGraph overview - Docs by LangChain",
+      "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+      "domain": "docs.langchain.com",
+      "snippet": "1 day ago - Register now → ... Trusted by companies shaping the future of agents—including Klarna, Uber, J.P. Morgan, and more—LangGraph is a low-level orchestration framework and runtime for building, managing, and deploying long-running, stateful agents.",
+      "words": 171,
+      "ok": true,
+      "error": "",
+      "cited": true
+    },
+    {
+      "id": 2,
+      "title": "LangGraph: Agent Orchestration Framework for Reliable AI Agents",
+      "url": "https://www.langchain.com/langgraph",
+      "domain": "langchain.com",
+      "snippet": "LangGraph sets the foundation for how we can build and scale AI workloads — from conversational agents, complex task automation, to custom LLM-backed experiences that 'just work'.",
+      "words": 209,
+      "ok": true,
+      "error": "",
+      "cited": false
+    },
+    {
+      "id": 3,
+      "title": "What is LangGraph? | IBM",
+      "url": "https://www.ibm.com/think/topics/langgraph",
+      "domain": "ibm.com",
+      "snippet": "July 8, 2026 - LangGraph, created by LangChain, is an open source AI agent framework designed to build, deploy and manage complex generative AI agent workflows. It provides a set of tools and libraries that enable users to create, run and optimize large language ...",
+      "words": 1632,
+      "ok": true,
+      "error": "",
+      "cited": true
+    },
+    {
+      "id": 4,
+      "title": "LangChain & LangGraph for Dummies - by Aishwarya Srinivasan",
+      "url": "https://aishwaryasrinivasan.substack.com/p/langchain-and-langgraph-for-dummies",
+      "domain": "aishwaryasrinivasan.substack.com",
+      "snippet": "December 13, 2025 - While LangChain excels at sequential pipelines, LangGraph handles complex, stateful workflows with loops, branches, and multiple agents. If LangChain is a simple flowchart, LangGraph is a full control panel. It models workflows as cyclic graphs where nodes rep",
+      "words": 1022,
+      "ok": true,
+      "error": "",
+      "cited": true
+    }
+  ],
+  "note": "Searched “what is LangGraph” and “LangGraph official documentation”. Read 4 of 4 pages. Every claim is a sentence from those pages, not something added from memory.",
+  "date": "25 Sep 2026",
+  "stats": {
+    "pages": 4,
+    "words": 3034,
+    "claims": 5,
+    "read": 4
+  },
+  "plain": "LangGraph\nWhat it is\n\nLangGraph, created by LangChain, is an open source AI agent framework designed to build, deploy and manage complex generative AI agent workflows. [3]\n\n• LangGraph provides low-level supporting infrastructure for any long-running, stateful workflow or agent. [1]\n• Many production systems use both: LangChain’s components (document loaders, vector stores, model interfaces) combined with LangGraph’s stateful orchestration layer. [4]\n• Nodes: In LangGraph, nodes represent individual components or agents within an AI workflow. [3]\n• Mix deterministic and agentic steps: Combine hand-coded, deterministic logic with LLM-driven decision-making in a single graph. [1]\n\nSources\n[1] LangGraph overview - Docs by LangChain\n    https://docs.langchain.com/oss/python/langgraph/overview\n[2] LangGraph: Agent Orchestration Framework for Reliable AI Agents\n    https://www.langchain.com/langgraph\n[3] What is LangGraph? | IBM\n    https://www.ibm.com/think/topics/langgraph\n[4] LangChain & LangGraph for Dummies - by Aishwarya Srinivasan\n    https://aishwaryasrinivasan.substack.com/p/langchain-and-langgraph-for-dummies\n\nSearched “what is LangGraph” and “LangGraph official documentation”. Read 4 of 4 pages. Every claim is a sentence from those pages, not something added from memory."
+}

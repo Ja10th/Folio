@@ -1,0 +1,109 @@
+{
+  "query": "How do LangGraph, CrewAI, and the OpenAI Agents SDK differ?",
+  "topic": "Three frameworks",
+  "intent": "compare",
+  "kicker": "From their own pages",
+  "points_label": "What each page says",
+  "failed": false,
+  "date": "25 Sep 2026",
+  "lead": {
+    "text": "These are sentences from each project's pages. They are not a ranking, and nothing here was added to make them agree.",
+    "sources": []
+  },
+  "points": [
+    {
+      "text": "LangGraph provides low-level supporting infrastructure for any long-running, stateful workflow or agent.",
+      "sources": [1]
+    },
+    {
+      "text": "Nodes: In LangGraph, nodes represent individual components or agents within an AI workflow.",
+      "sources": [2]
+    },
+    {
+      "text": "Mix deterministic and agentic steps: Combine hand-coded, deterministic logic with LLM-driven decision-making in a single graph.",
+      "sources": [1]
+    },
+    {
+      "text": "CrewAI is an open-source framework focused specifically on autonomous multi-agent orchestration, available on GitHub.",
+      "sources": [3]
+    },
+    {
+      "text": "CrewAI Flows: Build event-driven automations that combine precise workflow control, single LLM calls, and native support for Crews.",
+      "sources": [4]
+    },
+    {
+      "text": "Tools let agents take actions: things like fetching data, running code, calling external APIs, and even using a computer.",
+      "sources": [5]
+    },
+    {
+      "text": "Agents can plan and complete tasks using tools, work with other agents, and maintain context across steps.",
+      "sources": [6]
+    }
+  ],
+  "quote": null,
+  "sources": [
+    {
+      "id": 1,
+      "title": "LangGraph overview - Docs by LangChain",
+      "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+      "domain": "docs.langchain.com",
+      "snippet": "LangGraph provides low-level supporting infrastructure for any long-running, stateful workflow or agent.",
+      "words": 171,
+      "ok": true,
+      "cited": true
+    },
+    {
+      "id": 2,
+      "title": "What is LangGraph? | IBM",
+      "url": "https://www.ibm.com/think/topics/langgraph",
+      "domain": "ibm.com",
+      "snippet": "Nodes: In LangGraph, nodes represent individual components or agents within an AI workflow.",
+      "words": 0,
+      "ok": true,
+      "cited": true
+    },
+    {
+      "id": 3,
+      "title": "CrewAI - AWS Prescriptive Guidance",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-frameworks/crewai.html",
+      "domain": "docs.aws.amazon.com",
+      "snippet": "CrewAI is an open-source framework focused specifically on autonomous multi-agent orchestration, available on GitHub.",
+      "words": 0,
+      "ok": true,
+      "cited": true
+    },
+    {
+      "id": 4,
+      "title": "crewAIInc/crewAI",
+      "url": "https://github.com/crewaiinc/crewai",
+      "domain": "github.com",
+      "snippet": "CrewAI Flows: Build event-driven automations that combine precise workflow control, single LLM calls, and native support for Crews.",
+      "words": 0,
+      "ok": true,
+      "cited": true
+    },
+    {
+      "id": 5,
+      "title": "Tools - OpenAI Agents SDK",
+      "url": "https://openai.github.io/openai-agents-python/tools/",
+      "domain": "openai.github.io",
+      "snippet": "Tools let agents take actions: things like fetching data, running code, calling external APIs, and even using a computer.",
+      "words": 0,
+      "ok": true,
+      "cited": true
+    },
+    {
+      "id": 6,
+      "title": "Agents | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/agents",
+      "domain": "developers.openai.com",
+      "snippet": "Agents can plan and complete tasks using tools, work with other agents, and maintain context across steps.",
+      "words": 0,
+      "ok": true,
+      "cited": true
+    }
+  ],
+  "note": "Assembled from the three briefs already on the desk. Every bullet is a sentence those runs cited. No new pages were opened for this note.",
+  "stats": {"pages": 6, "words": 0, "claims": 7, "read": 6},
+  "plain": "Three frameworks\nFrom their own pages\n\nLangGraph provides low-level supporting infrastructure for any long-running, stateful workflow or agent. [1]\nNodes: In LangGraph, nodes represent individual components or agents within an AI workflow. [2]\nMix deterministic and agentic steps: Combine hand-coded, deterministic logic with LLM-driven decision-making in a single graph. [1]\nCrewAI is an open-source framework focused specifically on autonomous multi-agent orchestration, available on GitHub. [3]\nCrewAI Flows: Build event-driven automations that combine precise workflow control, single LLM calls, and native support for Crews. [4]\nTools let agents take actions: things like fetching data, running code, calling external APIs, and even using a computer. [5]\nAgents can plan and complete tasks using tools, work with other agents, and maintain context across steps. [6]\n"
+}

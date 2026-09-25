@@ -1,0 +1,100 @@
+{
+  "failed": false,
+  "query": "How does the OpenAI Agents SDK handle tools?",
+  "topic": "OpenAI Agents SDK",
+  "intent": "how",
+  "kicker": "How it works",
+  "points_label": "What the pages say",
+  "queries": [
+    "How does the OpenAI Agents SDK handle tools",
+    "OpenAI Agents SDK tools"
+  ],
+  "lead": {
+    "text": "Agents can plan and complete tasks using tools, work with other agents, and maintain context across steps.",
+    "sources": [
+      1
+    ]
+  },
+  "points": [
+    {
+      "text": "Tools such as Mem0 can complement the SDK in this area, but the core decision should come down to how much orchestration complexity your team is prepared to manage.",
+      "sources": [
+        3
+      ]
+    },
+    {
+      "text": "Tools let agents take actions: things like fetching data, running code, calling external APIs, and even using a computer.",
+      "sources": [
+        2
+      ]
+    },
+    {
+      "text": "Read Programmatic Tool Calling for orchestration with JavaScript and the configuration for each API.",
+      "sources": [
+        1
+      ]
+    },
+    {
+      "text": "The OpenAI Agents SDK focuses on production readiness with features like guardrails and standardized patterns for agent-to-agent handoffs.",
+      "sources": [
+        3
+      ]
+    }
+  ],
+  "quote": null,
+  "sources": [
+    {
+      "id": 1,
+      "title": "Agents | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/agents",
+      "domain": "developers.openai.com",
+      "snippet": "1 day ago - It includes automatic context compaction, multi-agent orchestration, programmatic tool calling, and support for MCP servers. See Architecture. The Agents SDK gives your application control over deployment, storage, approvals, and runtime integration.",
+      "words": 215,
+      "ok": true,
+      "error": "",
+      "cited": true
+    },
+    {
+      "id": 2,
+      "title": "Tools - OpenAI Agents SDK",
+      "url": "https://openai.github.io/openai-agents-python/tools/",
+      "domain": "openai.github.io",
+      "snippet": "Tools let agents take actions: things like fetching data, running code, calling external APIs, and even using a computer. The SDK supports five categories: Hosted OpenAI tools: execute for the model on OpenAI servers.",
+      "words": 1447,
+      "ok": true,
+      "error": "",
+      "cited": true
+    },
+    {
+      "id": 3,
+      "title": "OpenAI Agent SDK: Features, Tools & Memory Guide",
+      "url": "https://mem0.ai/blog/openai-agents-sdk-review",
+      "domain": "mem0.ai",
+      "snippet": "November 2, 2025 - Unlike heavyweight alternatives, Agents SDK takes a minimalist approach with just four core primitives that handle the key building blocks of agent systems. The framework's lightweight architecture makes it immediately accessible to developers ...",
+      "words": 1511,
+      "ok": true,
+      "error": "",
+      "cited": true
+    },
+    {
+      "id": 4,
+      "title": "GitHub - openai/openai-agents-python: A lightweight, powerful framework for multi-agent workflows · GitHub",
+      "url": "https://github.com/openai/openai-agents-python",
+      "domain": "github.com",
+      "snippet": "3 weeks ago - Tracing: Built-in tracking of agent runs, allowing you to view, debug and optimize your workflows · Explore the examples directory to see the SDK in action, and read our documentation for more details. To get started, set up your Python environment (Python 3.10 or n",
+      "words": 713,
+      "ok": true,
+      "error": "",
+      "cited": false
+    }
+  ],
+  "note": "Searched “How does the OpenAI Agents SDK handle tools” and “OpenAI Agents SDK tools”. Read 4 of 4 pages. Every claim is a sentence from those pages, not something added from memory.",
+  "date": "25 Sep 2026",
+  "stats": {
+    "pages": 4,
+    "words": 3886,
+    "claims": 5,
+    "read": 4
+  },
+  "plain": "OpenAI Agents SDK\nHow it works\n\nAgents can plan and complete tasks using tools, work with other agents, and maintain context across steps. [1]\n\n• Tools such as Mem0 can complement the SDK in this area, but the core decision should come down to how much orchestration complexity your team is prepared to manage. [3]\n• Tools let agents take actions: things like fetching data, running code, calling external APIs, and even using a computer. [2]\n• Read Programmatic Tool Calling for orchestration with JavaScript and the configuration for each API. [1]\n• The OpenAI Agents SDK focuses on production readiness with features like guardrails and standardized patterns for agent-to-agent handoffs. [3]\n\nSources\n[1] Agents | OpenAI API\n    https://developers.openai.com/api/docs/guides/agents\n[2] Tools - OpenAI Agents SDK\n    https://openai.github.io/openai-agents-python/tools/\n[3] OpenAI Agent SDK: Features, Tools & Memory Guide\n    https://mem0.ai/blog/openai-agents-sdk-review\n[4] GitHub - openai/openai-agents-python: A lightweight, powerful framework for multi-agent workflows · GitHub\n    https://github.com/openai/openai-agents-python\n\nSearched “How does the OpenAI Agents SDK handle tools” and “OpenAI Agents SDK tools”. Read 4 of 4 pages. Every claim is a sentence from those pages, not something added from memory."
+}

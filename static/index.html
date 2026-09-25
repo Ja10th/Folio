@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Folio — personal research agent</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,620&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <noscript class="noscript">Folio needs JavaScript to run the research agent.</noscript>
+  <div class="room">
+    <div class="frame">
+      <header class="top">
+        <div class="brand">
+          <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
+            <rect x="4" y="5" width="16" height="22" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M20 9h8v18H12" fill="none" stroke="#e7b08a" stroke-width="1.5"/>
+          </svg>
+          <div>
+            <strong>Folio</strong>
+            <em>Personal research agent</em>
+          </div>
+        </div>
+        <div class="top-meta">3 tools · LangGraph · grounded</div>
+      </header>
+
+      <div class="sheet">
+        <aside class="margin">
+          <form id="ask">
+            <label for="query">The brief</label>
+            <textarea id="query" rows="5" autocomplete="off">Research LangGraph and tell me what it does.</textarea>
+            <div class="chips">
+              <button class="chip" type="button" data-q="Research LangGraph and tell me what it does.">LangGraph</button>
+              <button class="chip" type="button" data-q="What is CrewAI?">CrewAI</button>
+              <button class="chip" type="button" data-q="How does the OpenAI Agents SDK handle tools?">Agents SDK</button>
+            </div>
+            <fieldset class="modes">
+              <legend>Path</legend>
+              <label><input type="radio" name="mode" value="graph" checked> Fixed graph</label>
+              <label><input type="radio" name="mode" value="loop"> Tool loop</label>
+            </fieldset>
+            <button id="go" type="submit">Research</button>
+            <p class="hint">Tool loop asks for one function at a time. Ctrl + Enter.</p>
+          </form>
+
+          <div id="history" class="history" hidden></div>
+
+          <ol class="graph" aria-label="Agent path">
+            <li data-node="agent">
+              <span class="idx">01</span>
+              <div><b>Agent</b><small>plans the searches</small><em class="note"></em></div>
+            </li>
+            <li data-node="search">
+              <span class="idx">02</span>
+              <div><b>Search</b><small>search_web()</small><em class="note"></em></div>
+            </li>
+            <li data-node="read">
+              <span class="idx">03</span>
+              <div><b>Read pages</b><small>fetch_page()</small><em class="note"></em></div>
+            </li>
+            <li data-node="summarize">
+              <span class="idx">04</span>
+              <div><b>Summarize</b><small>summarize()</small><em class="note"></em></div>
+            </li>
+            <li data-node="answer">
+              <span class="idx">05</span>
+              <div><b>Answer</b><small>with sources</small><em class="note"></em></div>
+            </li>
+          </ol>
+
+          <div id="calls" class="calls"></div>
+
+          <details class="protocol" id="protocol">
+            <summary>Function calls</summary>
+            <p class="hint">Same shape a model API returns: functionCall, then functionResponse.</p>
+            <pre id="protocol-log"></pre>
+          </details>
+
+          <div class="tools">
+            <p>Tools</p>
+            <code>search_web()</code>
+            <code>fetch_page()</code>
+            <code>summarize()</code>
+          </div>
+          <div id="shelf" class="history" hidden></div>
+        </aside>
+
+        <main class="text" id="desk">
+          <div class="idle">
+            <h2>Ask in the margin.</h2>
+            <p class="deck">Folio is a clerk with three tools. It searches, reads a few pages, and writes a brief from those sentences. It cites them. It does not fill the rest in from memory.</p>
+            <ol class="flow">
+              <li><b>User</b><span>the question</span></li>
+              <li><b>Agent</b><span>two search queries</span></li>
+              <li><b>Search</b><span>search_web()</span></li>
+              <li><b>Read pages</b><span>fetch_page()</span></li>
+              <li><b>Summarize</b><span>summarize()</span></li>
+              <li><b>Answer</b><span>with sources</span></li>
+            </ol>
+            <details class="build" id="build">
+              <summary>How this agent is built</summary>
+              <p>Five nodes in a LangGraph <code>StateGraph</code>. The agent node only plans queries. Search, read, and summarize are tools. A model API would return a functionCall and wait for a functionResponse. This graph makes those calls itself, in that same shape.</p>
+              <div id="graph-src">Loading the graph…</div>
+            </details>
+          </div>
+        </main>
+      </div>
+
+      <footer class="colophon">A tiny agent. Not a five-agent company.</footer>
+    </div>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

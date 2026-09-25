@@ -1,0 +1,100 @@
+{
+  "failed": false,
+  "query": "What is CrewAI?",
+  "topic": "CrewAI",
+  "intent": "define",
+  "kicker": "What it is",
+  "points_label": "What it does",
+  "queries": [
+    "what is CrewAI",
+    "CrewAI official documentation"
+  ],
+  "lead": {
+    "text": "CrewAI is an open-source framework focused specifically on autonomous multi-agent orchestration, available on GitHub.",
+    "sources": [
+      3
+    ]
+  },
+  "points": [
+    {
+      "text": "CrewAI provides a role-based implementation of teams of AI agents approach for business stakeholders, as detailed in Getting Started.",
+      "sources": [
+        3
+      ]
+    },
+    {
+      "text": "CrewAI Flows: Build event-driven automations that combine precise workflow control, single LLM calls, and native support for Crews.",
+      "sources": [
+        4
+      ]
+    },
+    {
+      "text": "Orchestrate start/listen/router steps, manage state, persist execution, and resume long-running workflows.",
+      "sources": [
+        2
+      ]
+    },
+    {
+      "text": "CrewAI AMP is designed for enterprises seeking a powerful, reliable solution to transform complex business processes into efficient, intelligent automations.",
+      "sources": [
+        4
+      ]
+    }
+  ],
+  "quote": null,
+  "sources": [
+    {
+      "id": 1,
+      "title": "Docs - CrewAI",
+      "url": "https://community.crewai.com/docs",
+      "domain": "community.crewai.com",
+      "snippet": "Official CrewAI community",
+      "words": 0,
+      "ok": false,
+      "error": "Page had almost no readable text.",
+      "cited": false
+    },
+    {
+      "id": 2,
+      "title": "CrewAI Documentation - CrewAI",
+      "url": "https://docs.crewai.com/",
+      "domain": "docs.crewai.com",
+      "snippet": "July 30, 2026 - Fetch the complete documentation index at: /llms.txt · Use this file to discover all available pages before exploring further. ... Build collaborative AI agents, crews, and flows — production ready from day one. ... Design agents, orchestrate crews, and automate f",
+      "words": 218,
+      "ok": true,
+      "error": "",
+      "cited": true
+    },
+    {
+      "id": 3,
+      "title": "CrewAI - AWS Prescriptive Guidance",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-frameworks/crewai.html",
+      "domain": "docs.aws.amazon.com",
+      "snippet": "Learn about CrewAI, an open-source framework for orchestrating multi-agent AI systems on AWS that collaborate to solve complex tasks.",
+      "words": 557,
+      "ok": true,
+      "error": "",
+      "cited": true
+    },
+    {
+      "id": 4,
+      "title": "GitHub - crewAIInc/crewAI: Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamless",
+      "url": "https://github.com/crewaiinc/crewai",
+      "domain": "github.com",
+      "snippet": "July 1, 2026 - A: Yes, CrewAI provides extensive beginner-friendly tutorials, courses, and documentation through learn.crewai.com, supporting developers at all skill levels.",
+      "words": 1505,
+      "ok": true,
+      "error": "",
+      "cited": true
+    }
+  ],
+  "note": "Searched “what is CrewAI” and “CrewAI official documentation”. Read 3 of 4 pages. Where a page would not open, only its search snippet was used. Every claim is a sentence from those pages, not something added from memory.",
+  "date": "25 Sep 2026",
+  "stats": {
+    "pages": 4,
+    "words": 2280,
+    "claims": 5,
+    "read": 3
+  },
+  "plain": "CrewAI\nWhat it is\n\nCrewAI is an open-source framework focused specifically on autonomous multi-agent orchestration, available on GitHub. [3]\n\n• CrewAI provides a role-based implementation of teams of AI agents approach for business stakeholders, as detailed in Getting Started. [3]\n• CrewAI Flows: Build event-driven automations that combine precise workflow control, single LLM calls, and native support for Crews. [4]\n• Orchestrate start/listen/router steps, manage state, persist execution, and resume long-running workflows. [2]\n• CrewAI AMP is designed for enterprises seeking a powerful, reliable solution to transform complex business processes into efficient, intelligent automations. [4]\n\nSources\n[1] Docs - CrewAI\n    https://community.crewai.com/docs\n[2] CrewAI Documentation - CrewAI\n    https://docs.crewai.com/\n[3] CrewAI - AWS Prescriptive Guidance\n    https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-frameworks/crewai.html\n[4] GitHub - crewAIInc/crewAI: Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamless\n    https://github.com/crewaiinc/crewai\n\nSearched “what is CrewAI” and “CrewAI official documentation”. Read 3 of 4 pages. Where a page would not open, only its search snippet was used. Every claim is a sentence from those pages, not something added from memory."
+}
